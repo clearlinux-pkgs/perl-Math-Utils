@@ -4,10 +4,10 @@
 #
 Name     : perl-Math-Utils
 Version  : 1.13
-Release  : 9
+Release  : 10
 URL      : https://cpan.metacpan.org/authors/id/J/JG/JGAMBLE/Math-Utils-1.13.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JG/JGAMBLE/Math-Utils-1.13.tar.gz
-Summary  : 'Useful mathematical functions not in Perl'
+Summary  : Useful mathematical functions not in Perl.
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-Math-Utils-license = %{version}-%{release}
@@ -23,6 +23,7 @@ and operations that are not part of standard Perl.
 Summary: dev components for the perl-Math-Utils package.
 Group: Development
 Provides: perl-Math-Utils-devel = %{version}-%{release}
+Requires: perl-Math-Utils = %{version}-%{release}
 
 %description dev
 dev components for the perl-Math-Utils package.
