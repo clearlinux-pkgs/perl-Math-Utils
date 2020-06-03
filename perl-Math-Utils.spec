@@ -4,7 +4,7 @@
 #
 Name     : perl-Math-Utils
 Version  : 1.14
-Release  : 14
+Release  : 15
 URL      : https://cpan.metacpan.org/authors/id/J/JG/JGAMBLE/Math-Utils-1.14.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JG/JGAMBLE/Math-Utils-1.14.tar.gz
 Summary  : 'Useful mathematical functions not in Perl'
@@ -98,4 +98,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Math/Utils.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Math/Utils.pm
