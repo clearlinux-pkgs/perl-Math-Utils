@@ -4,14 +4,12 @@
 #
 Name     : perl-Math-Utils
 Version  : 1.14
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/J/JG/JGAMBLE/Math-Utils-1.14.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JG/JGAMBLE/Math-Utils-1.14.tar.gz
 Summary  : 'Useful mathematical functions not in Perl'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
-Requires: perl-Math-Utils-license = %{version}-%{release}
-Requires: perl-Math-Utils-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 
 %description
@@ -19,33 +17,6 @@ BuildRequires : buildreq-cpan
 ## Version 1.14
 Contains implementations of commonly used mathematical functions
 and operations that are not part of standard Perl.
-
-%package dev
-Summary: dev components for the perl-Math-Utils package.
-Group: Development
-Provides: perl-Math-Utils-devel = %{version}-%{release}
-Requires: perl-Math-Utils = %{version}-%{release}
-
-%description dev
-dev components for the perl-Math-Utils package.
-
-
-%package license
-Summary: license components for the perl-Math-Utils package.
-Group: Default
-
-%description license
-license components for the perl-Math-Utils package.
-
-
-%package perl
-Summary: perl components for the perl-Math-Utils package.
-Group: Default
-Requires: perl-Math-Utils = %{version}-%{release}
-
-%description perl
-perl components for the perl-Math-Utils package.
-
 
 %prep
 %setup -q -n Math-Utils-1.14
@@ -87,15 +58,3 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-
-%files dev
-%defattr(-,root,root,-)
-/usr/share/man/man3/Math::Utils.3
-
-%files license
-%defattr(0644,root,root,0755)
-/usr/share/package-licenses/perl-Math-Utils/7a5c834004a31487e2bc7ec3c33259bded907d1d
-
-%files perl
-%defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/Math/Utils.pm
