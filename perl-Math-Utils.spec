@@ -7,7 +7,7 @@
 #
 Name     : perl-Math-Utils
 Version  : 1.14
-Release  : 30
+Release  : 31
 URL      : https://cpan.metacpan.org/authors/id/J/JG/JGAMBLE/Math-Utils-1.14.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/J/JG/JGAMBLE/Math-Utils-1.14.tar.gz
 Summary  : 'Useful mathematical functions not in Perl'
